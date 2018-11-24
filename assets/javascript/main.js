@@ -7,12 +7,12 @@ $(document).ready(function() {
 });
 
 function animalButtonClicked() {
-    var userInput = $('#animale-input').val();
+    var userInput = $('#animal-input').val();
     searchGif(userInput);
 }
 
 function submitButtonClicked() {
-    var userInput = $('#animale-input').val();
+    var userInput = $('#animal-input').val();
 
     if (userInput) {
         $('#animal-buttons').append("<button type='button' onclick='searchGif(\"" + userInput + "\")' class='btn btn-primary' value=' " + userInput + "'> " + userInput + " </button>");
